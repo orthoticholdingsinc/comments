@@ -1,0 +1,138 @@
+form {margin: 0 0 2em 0;}
+label {
+  color: $darkgrey;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 0 0 1em 0;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: none;
+  border: solid 2px $darkgrey;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1rem;
+  text-decoration: none;
+  width: 100%;
+}
+  input[type="text"]:invalid,
+  input[type="password"]:invalid,
+  input[type="email"]:invalid,
+  select:invalid,
+  textarea:invalid {
+    box-shadow: none;
+  }
+  input[type="text"]:focus,
+  input[type="password"]:focus,
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color: $cta;
+    box-shadow: 0 0 0 1px $cta;
+  }
+form .input-group {
+  margin-bottom:2rem;
+}
+.select-wrapper {
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+.select-wrapper:before {
+  content: "";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+.select-wrapper:before {
+  color: rgba($grey, 0.25);
+  display: block;
+  height: 2.75rem;
+  line-height: 2.75;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 2.75rem;
+}
+.select-wrapper select::-ms-expand {display: none;}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {height: 2.75rem;}
+textarea {padding: 0.75em 1rem;}
+input[type="radio"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  display: inline-block;
+  margin-right: -2rem;
+  opacity: 0;
+  width: 1rem;
+  z-index: -1;
+}
+input[type="radio"] + label {
+  text-decoration: none;
+  color: $grey;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 300;
+  padding-left: 2.4rem;
+  padding-right: 0.75rem;
+  position: relative;
+}
+input[type="radio"] + label:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+input[type="radio"] + label:before {
+  background: rgba($grey, 0.075);
+  border-radius: 6px;
+  border: solid 1px rgba($grey, 0.25);
+  content: '';
+  display: inline-block;
+  height: 1.65rem;
+  left: 0;
+  line-height: 1.58125;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 1.65rem;
+}
+input[type="radio"]:checked + label:before {
+  background: $darkgrey;
+  border-color: $darkgrey;
+  color: $white;
+  content: '\f00c';
+}
+input[type="radio"]:focus + label:before {border-color: $cta; box-shadow: 0 0 0 1px $cta;}
+input[type="radio"] + label:before {border-radius: 100%;}
+
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+.formerize-placeholder {color: $grey !important;	opacity: 1.0;}

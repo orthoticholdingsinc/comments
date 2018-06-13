@@ -1,0 +1,130 @@
+#banner {
+    margin: 0 auto;
+    padding: 14rem 0;
+		background-color: $primary;
+		background-image: none;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		color: $white;
+		text-align: center;
+		position: relative;
+		background-attachment: fixed;
+  .container {margin-top: 0; padding-top: 5rem;}
+	.inner {
+    position: relative; z-index: 1;
+    &:last-child {margin-bottom: 0;}
+    .row div:last-child {text-align: left;}
+  }
+	& h2, & h3, & h4, & h5, & h6 {color: $white;}
+	.button {
+    min-width: 12rem;
+    &.big {
+      margin-top: 10%; border: solid 1px $cta;
+      &:hover {border: solid 1px $white;}
+    }
+  }
+	h2 {
+		font-size: 2.5rem;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+	p {
+    font-size: 1.5rem; margin-bottom: 2rem;
+    a {color: $white; text-decoration: none;}
+  }
+  &.main-banner {
+    margin-top: 5.2777rem;
+    margin-bottom: 0;
+    background:$white;
+    p {font-weight:100;font-size:1.15rem;}
+    .inner {
+  		padding: 5rem 3rem;
+  		background: rgba($black, 0.5);
+  	}
+    form {
+      label {
+  	    color: $white;
+  	    font-weight: 100;
+  	    display: inline-block;
+  	    font-size: 2rem;
+  	    margin: 0 1rem 0 0;
+      }
+      input {
+    	    display: inline-block;
+    	    width: 15rem;
+    	    border: none;
+    	    border-radius: 0;
+    	    border-bottom: 1px solid $white;
+    	    height: auto;
+    	    background: none;
+    	    padding: 0 2.1rem 0 .5rem;
+    	    font-size: 2rem;
+    	    font-weight: 400;
+    	}
+      .fa-search {
+    	    font-size: 1.5rem;
+    	    margin-left: -1.75rem;
+    	    display: inline-block;
+    	}
+      .button {margin-top: 1.5rem; display: block; clear: both;}
+  	}
+  }
+  &.main-banner, &.content-banner {
+		color:$white;
+		text-align:left;
+		padding: 0;
+    & h2 {text-transform: none;padding-bottom:1rem;border-bottom:3px solid $secondary;}
+	}
+  &.secondary-banner {
+    text-align:left;padding:0;border-top:1px solid $primary;
+    .banner-img {
+      position:relative;
+      img {margin:0;z-index:1;}
+    	.img-ribbon {position:absolute;bottom:50px;left:0;background:rgba($black,0.5);padding:1rem 3rem;color:$white;z-index:5;}
+    	h4 {margin:0 0 0 1rem;}
+    }
+    .banner-content {
+      padding:9rem 9rem 9rem 5rem;
+      h4 {font-weight: 400;font-size: 2rem;text-transform: none;}
+      h5 {font-weight: 400;font-size: 1.1rem;text-transform: none;color: $lightgrey; margin-bottom: 2rem;}
+      p {color: $lightgrey;font-size: 1rem;}
+    }
+  }
+  &.content-banner {
+    .inner {padding:5rem 0;}
+    h2 {font-size:3rem;}
+  }
+}
+
+@media screen and (max-width: 1680px) {#banner {padding: 9em 0;}}
+@media screen and (max-width: 1280px) {
+	#banner {
+    padding: 8em 0;
+    h2 {font-size: 2.5em;}
+    .inner .row div:last-child {padding-left: 10%;}
+  }
+}
+@media screen and (max-width: 991px) {
+	#banner {
+    padding: 6em 1em;
+    .container {padding-top: 2rem;}
+    &.main-banner {
+      margin-top:50px;
+      .inner {padding-right:2rem;}
+    }
+    .inner .row div:last-child {margin-top: 4rem; padding-left: 2.5em; text-align: center;}
+    .button {min-width: 0;}
+  }
+}
+@media screen and (max-width: 767px) {
+	.main-banner .inner {width:100%;}
+	#banner {
+    padding: 5em 2em 4em 2em;
+    h2 {font-size: 2em;}
+  	p {font-size: 1.25em;}
+  }
+}
+@media screen and (max-width: 480px){
+  #banner .inner h2 {text-align: center;}
+}

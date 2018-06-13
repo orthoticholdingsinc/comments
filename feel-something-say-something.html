@@ -1,0 +1,20 @@
+---
+layout: default
+title: Feel something, Say something | MyFallRisk.com
+---
+
+<section id="three" class="wrapper articles style1">
+	<div class="container">
+		<header class="major">
+			<h2>Feel something, Say something</h2>
+		</header>
+		<div class="row">
+			<div class="col-md-12">
+{% capture articles %}
+{% include_relative articles/_content/feel-something-say-something_article.md %}
+{% endcapture %}
+{{ articles | markdownify }}
+			</div>
+		</div>
+	</div>
+</section>

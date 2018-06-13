@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+    {% include /head.html %}
+    <style>.box {background: teal;}</style>
+	<body id="top">
+
+        {% include /header.html %}
+        {{ content }}
+        {% include /footer.html %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+        <script src="js/wew.min.js"></script>
+        <script>
+            var wew = new Wew();
+            wew.init();
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,188 @@
+#main-header {
+  background: $darkgrey;
+  background: rgba(desaturate(darken($primary, 15%), 20%), .85);
+  color: $white;
+  cursor: default;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 5.2777rem;
+  padding: 1.5rem 0 0;
+  z-index: 10000;
+  #show-menu {display: none;}
+  h1 {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+  }
+  img {max-width: 150px;}
+  .mobile-menu {display: none;}
+  nav {
+    float: right;
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        text-align: left;
+        z-index: 997;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        label {display: inline-block;}
+        input[type=checkbox] {display: none;}
+        & a, & label {
+          color: $white;
+          border-bottom: 3px solid transparent;
+          margin: 0 .7rem;
+          padding: 1rem 0 .3rem;
+          font-size: 1rem;
+          text-transform: uppercase;
+          text-decoration: none;
+        }
+        &:hover a {border-color: $white;}
+        ul li:hover ul {top: 0;}
+        ul {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          position: absolute;
+          background: $lightgrey;
+          border: solid $secondary;
+          box-shadow: 4px 6px 7px rgba($black,.2);
+          border-width: 0 1px 1px 1px;
+        }
+        .nav-return {display: none;}
+      }
+    }
+    ul ul > li:hover > a, #main-header nav > ul > li > ul > li:hover > label {
+      color: $white;
+      background: $darkgrey;
+      width: 100%;
+    }
+    > ul {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      > li > ul {
+        top: -9999px;
+        left: 0;
+        min-width: 198px;
+        z-index: 998;
+      }
+      > li:hover > ul {top: 100%;}
+      li > ul > li > ul {
+        position: absolute;
+        top: -9999px;
+        right: -99.5%;
+        min-width: 175px;
+        border-width: 1px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+	#main-header {
+    min-height: 50px;
+	  h1 {display: none;}
+	  nav {
+  		position: absolute;
+  		top: 0;
+  		left: -282px;
+  		width: 280px;
+  		height: 100vh;
+  		background: $darkgrey;
+  		background: rgba($black,.85);
+  		transition: left .25s;
+  		overflow: hidden;
+      ul {
+        li {
+          position: static; text-align: left; width: 100%;
+          label {cursor: pointer;}
+          & label:hover, & a:hover {background: $secondary; color: $white;}
+          .nav-return {display: block;}
+          input[type=checkbox]:checked ~ ul {right: 0;}
+        }
+        ul {background: $darkgrey;}
+        .nav-return {margin-top: 4rem;}
+        ul {background: $darkgrey;}
+        display: block;
+      }
+    }
+	#show-menu[type=checkbox]:checked ~ nav{left: 0; top: 0;}
+
+	nav {
+    > ul {
+      position: relative; padding: 4rem 0 0 0;
+      & > li a, & ul li a, & li label{
+    		margin: 0;
+    		padding: 1rem;
+    		color: $lightgrey;
+    		font-size: 1rem;
+    		font-weight: 300;
+    		border-bottom: solid 1px $grey;
+    		display: block;
+    		width: 100%;
+    	}
+      > li {
+        > ul, > ul > li > ul {
+      		top: 0!important;
+      		right: -282px;
+      		left: auto;
+      		height: 100vh;
+      		transition: right .5s;
+      	}
+        input[type=checkbox]:checked ~ ul{right: 0;}
+      }
+      a {
+    		margin: 0;
+    		color: $lightgrey;
+    		font-size: 1rem;
+    		border-bottom: solid 1px $grey;
+    		display: block;
+    		width: 100%;
+        &:focus {background: $secondary;}
+        &:focus ~ ul {right: 0;}
+    	}
+      ul {
+    		height: 100vw;
+    		width: 280px;
+    		position: absolute;
+    		top: 0;
+    		right: -280px;
+    		transition: right .5s;
+    		background: $darkgrey;
+    		z-index: 999;
+    	}
+    }
+  }
+
+	.mobile-menu {
+		padding: .5rem;
+		display: block;
+		position: fixed;
+		top: .5rem;
+		left: .5rem;
+		text-decoration: none;
+		z-index: 999;
+		border-radius: 4px;
+		cursor: pointer;
+
+    i {display: block; color: $white;}
+  }
+ }
+}
+@media screen and (max-width: 767px) {
+  header.major {
+    width: 90%; margin: 0 auto 3rem;
+    h2 {
+      font-size: 1.5rem;
+      & + p {font-size: 1.25rem;	margin: -0.5rem 0 2rem 0;}
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+	#main-header img {margin: 1rem auto 0;width: 33.333%; min-width: 140px;}
+}

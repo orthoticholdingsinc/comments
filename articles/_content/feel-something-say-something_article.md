@@ -1,0 +1,13 @@
+The idiom “Pride goes before the fall” usually denotes that overconfidence will lead to one’s destruction. For our purposes, it effectively describes what can happen when older people who are aware that they have balance concerns, allow vanity to stop them from seeking help. That’s a disturbing concept because, according to the National Council on Aging, “Every 19 minutes, an older adult dies from a fall.”
+
+Many people who are unsteady on their feet fear falling because they understand the consequences associated with a fall: bone fractures, head/brain injuries, as well as a loss of independence and isolation. They also believe that balance difficulties and falling are symptomatic of growing older. For that reason, they don’t mention their trepidation about falling to anyone because the angst of being portrayed as aged or frail dwarf their fears. Instead, they use walls and other environmental structures to balance themselves when they walk, and use the arms of their chairs to rise from sitting.
+
+Despite the notion that falling is indicative of growing older, several medical studies suggest that it simply could be a matter of older adults not getting enough vitamin D. We are familiar with vitamin D’s ability to regulate our calcium intake and thereby strengthen our bones, but these reviews indicate that vitamin D also plays a role in the regeneration of muscle, as well as other tissues. The deduction? Stronger muscles and nerve tissue mean fewer falls.
+
+Increased proprioception is a matter of retraining your brain to make the adjustment subconsciously. To that end, proprioceptive and balance exercises, along with a daily dosing of vitamin D, could rehabilitate the body to quickly adjust an unsteady movement.
+
+Moreover, a Nov. 7, 2017, study published in JAMA (Journal of the American Medical Association) (JAMA. 2017;318(17):1687-1699. doi:10.1001/jama.2017.15006) concluded that exercise is one of the most important things that doctors can encourage their patients to do to decrease the risk for falls. Consult with your healthcare provider before beginning any exercise regimen.
+
+Conversely, a person’s unsteadiness often is not an issue of poor proprioception, but one caused by medication, poor eyesight, neuropathy, or an underlying medical condition. Decidedly, that determination can only be made through process of elimination and a fall-risk assessment performed by a diagnostician.
+
+ If it is a balance or neuropathic issue, you don’t have to navigate the field alone. Clinicians are available to evaluate your concerns. To locate a practitioner near you with experience in fall-risk prevention and evaluation, visit [www.myfallrisk.com](www.myfallrisk.com).

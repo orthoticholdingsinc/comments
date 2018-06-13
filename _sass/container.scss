@@ -1,0 +1,43 @@
+
+/* Wrapper */
+	.container {
+		margin: 0;
+		padding: 5rem 2rem;
+		width: 100%;
+		&.style1 {background: $white; color: $black;}
+		&.style2 {
+			background: darken($primary, 15%);
+			color: $white;
+			border-bottom:12px solid $cta;
+			header.major {margin-bottom: 2rem;}
+			h2 {color: $white; font-size: 3rem; text-transform: none;}
+			header p {color: $grey;}
+			.button {
+				&.alt {
+					color: $white;
+					padding: 0 5rem;
+					background-color: $cta;
+					box-shadow: 4px 4px 12px rgba($darkgrey, 1);
+					&:hover {background-color: darken($cta, 15%);}
+					&:active {background-color: darken($cta, 15%);}
+					&:before {color: $grey;}
+				}
+			}
+			& * {color: $white;}
+		}
+		&.style3 {
+			background: $lightgrey; color: $black;
+			header.major hr {
+				border-color: #454257;
+		    margin: auto;
+		    border-width: 11px;
+		    border-radius: 7px;
+		    width: 9rem;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.container.style2 h2 {font-size: 2rem;}
+		.container.style2 .button.alt {padding: 0 1rem;}
+	}

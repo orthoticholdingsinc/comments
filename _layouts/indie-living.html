@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+    {% include /head.html %}
+
+	<body id="top">
+
+        {% include /header.html %}
+
+        <!-- Banner -->
+        <section id="banner" class="content-banner">
+            <div class="container">
+                <div class="inner">
+                    <h2>
+                        <strong>Independent</strong><br />Living
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondary Banner -->
+        <section id="banner" class="secondary-banner">
+            <div class="row flush">
+                <div class="col-md-6">
+                    <div class="banner-img">
+                        <img src="http://via.placeholder.com/500?text=Featured+Story+Image" alt="" class="flex-img" />
+                        <span class="img-ribbon">
+                            <img src="http://via.placeholder.com/50?text=V" alt="" class="image float-left" />
+                            <h4 class="float-left"><strong>John's</strong><br />Success Story</h4>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-content">
+                        <h4>Featured Story</h4>
+                        <h5>John Smith</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt accumsan commodo. Suspendisse cursus ac purus nec lobortis. Aenean volutpat sollicitudin commodo. Aliquam pharetra suscipit tempus. Curabitur nisi sem, tempus at nisl vitae, aliquam imperdiet risus. Ut non odio quis lorem hendrerit iaculis.</p>
+                        <a href="" class="button alt">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ content }}
+
+        {% include /footer.html %}
+
+
+        <script src="{{ site.baseurl }}/slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="{{ site.baseurl }}/js/story-items.js"></script>
+    </body>
+
+</html>
